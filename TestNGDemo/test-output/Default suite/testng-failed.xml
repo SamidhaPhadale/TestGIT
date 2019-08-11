@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="BasicTestNG.Demo09_SSL_FF">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- BasicTestNG.Demo09_SSL_FF -->
+      <class name="BasicTestNG.FBTestNG">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- BasicTestNG.FBTestNG -->
+      <class name="BasicTestNG.Demo02_TestNG_Priority">
+        <methods>
+          <include name="test02"/>
+          <include name="test03"/>
+        </methods>
+      </class> <!-- BasicTestNG.Demo02_TestNG_Priority -->
+      <class name="BasicTestNG.Demo06_TestNG_Grouping">
+        <methods>
+          <include name="bike2"/>
+          <include name="bike1"/>
+          <include name="car"/>
+          <include name="car1"/>
+          <include name="car2"/>
+          <include name="bike"/>
+        </methods>
+      </class> <!-- BasicTestNG.Demo06_TestNG_Grouping -->
+      <class name="BasicTestNG.Demo01_TestNGClass">
+        <methods>
+          <include name="test"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- BasicTestNG.Demo01_TestNGClass -->
+      <class name="BasicTestNG.FlipCart_example">
+        <methods>
+          <include name="f"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- BasicTestNG.FlipCart_example -->
+      <class name="BasicTestNG.Demo03_TestNG_Dependencies">
+        <methods>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="dashboard"/>
+        </methods>
+      </class> <!-- BasicTestNG.Demo03_TestNG_Dependencies -->
+      <class name="BasicTestNG.ParameterAnnotation">
+        <methods>
+          <include name="Setup"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- BasicTestNG.ParameterAnnotation -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
