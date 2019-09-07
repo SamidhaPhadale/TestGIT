@@ -23,20 +23,21 @@ public class TestNGBasics_NAL {
 		driver.get("https://www.google.com");
 	}
 	
-	@Test
+	@Test(priority=1, groups = "Title", expectedExceptions = ArithmeticException.class)
 	public void googleTitle() {
 		String title = driver.getTitle();
 		System.out.println(title);
+		int a = 5/0;
 	}
 	
-	@Test
+	@Test(priority=3, groups = "Logo")
 	public void logoTest() {
 		boolean b= driver.findElement(By.xpath("//*[@id=\"hplogo\"]")).isDisplayed();
 		System.out.println(b);
 		
 	}
 	
-	@Test
+	@Test(priority=2,groups = "Logo",dependsOnMethods = "googleTitle")
 	public void emailLinkTest() {
 		boolean b = driver.findElement(By.linkText("Gmail")).isDisplayed();
 		System.out.println(b);
