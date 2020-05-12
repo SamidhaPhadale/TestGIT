@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15702" started-at="2019-08-11T08:34:34Z" finished-at="2019-08-11T08:34:49Z">
+  <suite name="Default suite" duration-ms="25615" started-at="2019-09-07T17:36:51Z" finished-at="2019-09-07T17:37:17Z">
     <groups>
+      <group name="Title">
+        <method signature="TestNGBasics_NAL.googleTitle()[pri:1, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="googleTitle" class="BasicTestNG.TestNGBasics_NAL"/>
+      </group> <!-- Title -->
+      <group name="Logo">
+        <method signature="TestNGBasics_NAL.emailLinkTest()[pri:2, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="emailLinkTest" class="BasicTestNG.TestNGBasics_NAL"/>
+        <method signature="TestNGBasics_NAL.logoTest()[pri:3, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="logoTest" class="BasicTestNG.TestNGBasics_NAL"/>
+      </group> <!-- Logo -->
     </groups>
-    <test name="Test" duration-ms="15702" started-at="2019-08-11T08:34:34Z" finished-at="2019-08-11T08:34:49Z">
-      <class name="BasicTestNG.Demo09_SSL_FF">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:BasicTestNG.Demo09_SSL_FF@4b9e13df]" name="setUp" is-config="true" duration-ms="15480" started-at="2019-08-11T08:34:34Z" finished-at="2019-08-11T08:34:49Z">
+    <test name="Default test" duration-ms="25615" started-at="2019-09-07T17:36:51Z" finished-at="2019-09-07T17:37:17Z">
+      <class name="BasicTestNG.TestNGBasics_NAL">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="setUp" is-config="true" duration-ms="8818" started-at="2019-09-07T17:36:51Z" finished-at="2019-09-07T17:37:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="openApplication()[pri:0, instance:BasicTestNG.Demo09_SSL_FF@4b9e13df]" name="openApplication" duration-ms="21" started-at="2019-08-11T08:34:49Z" finished-at="2019-08-11T08:34:49Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="googleTitle()[pri:1, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="googleTitle" duration-ms="21" started-at="2019-09-07T17:37:00Z" finished-at="2019-09-07T17:37:00Z">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at BasicTestNG.Demo09_SSL_FF.openApplication(Demo09_SSL_FF.java:28)
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at BasicTestNG.TestNGBasics_NAL.googleTitle(TestNGBasics_NAL.java:30)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -43,48 +53,39 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.ArithmeticException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:BasicTestNG.Demo09_SSL_FF@4b9e13df]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-11T08:34:49Z" finished-at="2019-08-11T08:34:49Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at BasicTestNG.Demo09_SSL_FF.tearDown(Demo09_SSL_FF.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- googleTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="tearDown" is-config="true" duration-ms="761" started-at="2019-09-07T17:37:00Z" finished-at="2019-09-07T17:37:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- BasicTestNG.Demo09_SSL_FF -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="setUp" is-config="true" duration-ms="7356" started-at="2019-09-07T17:37:01Z" finished-at="2019-09-07T17:37:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="emailLinkTest()[pri:2, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="emailLinkTest" duration-ms="141" started-at="2019-09-07T17:37:08Z" depends-on-methods="BasicTestNG.TestNGBasics_NAL.googleTitle" finished-at="2019-09-07T17:37:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="tearDown" is-config="true" duration-ms="854" started-at="2019-09-07T17:37:09Z" finished-at="2019-09-07T17:37:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="setUp" is-config="true" duration-ms="6819" started-at="2019-09-07T17:37:09Z" finished-at="2019-09-07T17:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logoTest()[pri:3, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="logoTest" duration-ms="70" started-at="2019-09-07T17:37:16Z" finished-at="2019-09-07T17:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BasicTestNG.TestNGBasics_NAL@cb5822]" name="tearDown" is-config="true" duration-ms="719" started-at="2019-09-07T17:37:16Z" finished-at="2019-09-07T17:37:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- BasicTestNG.TestNGBasics_NAL -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
