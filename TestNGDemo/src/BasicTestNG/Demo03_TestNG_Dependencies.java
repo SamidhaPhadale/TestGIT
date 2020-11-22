@@ -9,6 +9,7 @@ public class Demo03_TestNG_Dependencies {
 	    public void dashboard()
 	    {
 	        System.out.println("Dashboard Page");
+	        System.out.println("hi");
 	    }
 	    
 	    @Test
